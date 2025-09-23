@@ -1,0 +1,45 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "Debug (MSVC)",
+            "program": "${workspaceFolder}/target/debug/examples/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "short"
+                }
+            ],
+            "preLaunchTask": "cargo-build-debug"
+        },
+        {
+            "type": "cppvsdbg",
+            "request": "launch",
+            "name": "Release (MSVC)",
+            "program": "${workspaceFolder}/target/release/examples/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "environment": [
+                {
+                    "name": "RUST_BACKTRACE",
+                    "value": "short"
+                }
+            ],
+            "preLaunchTask": "cargo-build-release"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug (CodeLLDB)",
+            "program": "${workspaceFolder}/target/debug/examples/${fileBasenameNoExtension}.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "sourceLanguages": ["rust"],
+            "preLaunchTask": "cargo-build-debug"
+        }
+    ]
+}

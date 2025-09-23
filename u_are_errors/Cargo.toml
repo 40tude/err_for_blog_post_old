@@ -1,0 +1,11 @@
+[package]
+name = "u_are_errors"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+
+# [profile.release]
+# rustflags = ["-C", "link-args=/DEBUG:NONE"]
+# debug = false
