@@ -1,5 +1,4 @@
 // ex13.rs
-// testing
 // CTRL+SHIFT+B to build | F5 to build and Debug | cargo run --example ex13
 
 type Result<T> = std::result::Result<T, Box<dyn std::error::Error>>;
