@@ -17,6 +17,7 @@ mod math_utils {
             }
         }
     }
+
     impl std::error::Error for MathError {}
 
     // Functions that return Result<_, MathError>
