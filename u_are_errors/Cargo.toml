@@ -3,12 +3,15 @@ name = "u_are_errors"
 version = "0.1.0"
 edition = "2024"
 
+# This line tells Cargo NOT to look for a default src/main.rs binary.
+autobins = false
 
 [dependencies]
 anyhow = "1.0.100"
 serde = { version = "1.0.226", features = ["derive"] }
 serde_json = "1.0.145"
 thiserror = "2.0.16"
+
 
 # [profile.release]
 # rustflags = ["-C", "link-args=/DEBUG:NONE"]
